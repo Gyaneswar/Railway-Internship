@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	li
+	{
+		float:left;
+	}
+	ul
+	{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color:#333; 
+	}
+	li a
+	{
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none; 
+	}
+	li a:HOVER {
+	background-color: aqua;
+	}
+	form
+	{
+	margin-top:50px;
+	margin-left:790px;
+	width:350px;
+	height:auto;
+	background: rgba(0,0,0	,0.2);
+	padding:20px;
+	border: 5px;
+	border-style: outset;
+	border-color:rgb(47,79,79);
+	}
+	#hello
+	{
+	margin-top:150px;
+	margin-left:60px;
+	}
+	body
+	{
+	background-image: url("back1.jpg");
+	height:100%;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-cover;
+	}
+	IMG
+	{
+	opacity:0.7;
+	}
+</style>
+<title>Login</title>
+<link rel="shortcut icon" href="razor.png" type="image/x-icon">
+</head>
+<body>
+	<ul>
+		<li> <a href="login.html">LOGIN</a></li>
+		<li> <a href="register.html">REGISTER</a></li>	
+		<IMG STYLE="position:absolute; TOP:110px; LEFT:915px; WIDTH:150px; HEIGHT:150px" SRC="IndianRailway.png">
+	</ul>	
+	  <form action="zap.controller.Login" method="post">
+        <div id="hello">
+        <input type="text" name="Email" placeholder="Enter Email id" /><br>
+        <input type="password" name="Password" placeholder="Enter Password" /><br>
+        <label class="checkbox"><a href="forget.html" style="color:white">FORGET PASSWORD</a><br>
+        <input type="submit" value="SUBMIT" class="btn btn-primary">
+        </div>
+    </form>
+
+</body>
+</html>
